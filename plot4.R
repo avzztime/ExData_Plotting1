@@ -25,12 +25,12 @@ png(filename = "plot4.png",
     width = 480, height = 480)
 par(mfcol=c(2,2))
 plot(pc$Global_active_power~pc$datetime, type="l",
-     ylab="Global Active Power (kilowatts)", xlab="")
+     ylab="Global Active Power", xlab="")
 plot(pc$datetime,pc$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
 lines(pc$datetime,pc$Sub_metering_2,col="red")
 lines(pc$datetime,pc$Sub_metering_3,col="blue")
 legend("topright", col=c("black","red","blue"), 
-       c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  "),lty=c(1,1), bty="n", cex=.85)
+       c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  "),lty=c(1,1), bty="n", cex=.95)
 plot(pc$datetime, pc$Voltage, type="l",
      xlab="datetime", ylab="Voltage")
 plot(pc$datetime,pc$Global_reactive_power, type="l", 
