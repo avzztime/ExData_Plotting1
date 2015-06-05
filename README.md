@@ -1,3 +1,7 @@
+Code makes the assumption that the input data file for this project is in the working directory
+Code begins from read.table of input file
+Code includes commentary
+
 ## Introduction
 
 This assignment uses data from
