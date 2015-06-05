@@ -30,7 +30,7 @@ plot(pc$datetime,pc$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering
 lines(pc$datetime,pc$Sub_metering_2,col="red")
 lines(pc$datetime,pc$Sub_metering_3,col="blue")
 legend("topright", col=c("black","red","blue"), 
-       c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  "),lty=c(1,1), bty="n", cex=.5)
+       c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  "),lty=c(1,1), bty="n", cex=.85)
 plot(pc$datetime, pc$Voltage, type="l",
      xlab="datetime", ylab="Voltage")
 plot(pc$datetime,pc$Global_reactive_power, type="l", 
